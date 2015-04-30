@@ -8,5 +8,5 @@ end
 
 desc "execution task for run application"
 task :build do
-  sh 'bundle exec foreman start'
+  sh 'bundle exec foreman start & bundle exec compass watch .'
 end
